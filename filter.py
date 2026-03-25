@@ -61,9 +61,9 @@ class FilterBot(discord.Client):
                     if message.channel.permissions_for(message.guild.me).manage_messages:
                         await message.delete()
                 except discord.errors.Forbidden:
-                    print("Cannot delete disallowed word included message. Check permissions.")
+                    print("[ERROR]Cannot delete disallowed word included message. Check permissions.")
                 except Exception as e:
-                    print(f"Unexpected error handling disallowed word: {e}")
+                    print(f"[ERROR]Unexpected error handling disallowed word: {e}")
 
 def main():
     bot = FilterBot(intents=intents)
