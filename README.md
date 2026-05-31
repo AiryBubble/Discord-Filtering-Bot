@@ -1,5 +1,6 @@
 ## 説明/使用方法
 DiscordでBotとして利用できるプログラム群です。
+動作は保証しません。
 * Requiment_Install.cmdを実行して必要なライブラリをインストールします。
 * .envの Token here にDiscord Botのトークンを挿入します。
 ### filter.py
